@@ -1,4 +1,4 @@
-package com.xiaolei.unit.baselibrary;
+package com.xiaolei.unit.baselibrary.baseMvp;
 
 /**
  * Presenter接口用于解除订阅回调

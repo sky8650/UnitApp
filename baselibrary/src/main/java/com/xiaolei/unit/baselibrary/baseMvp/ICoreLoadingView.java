@@ -1,4 +1,4 @@
-package com.xiaolei.unit.baselibrary;
+package com.xiaolei.unit.baselibrary.baseMvp;
 
 /**
  * 默认的加载接口
