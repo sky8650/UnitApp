@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import com.orhanobut.logger.Logger;
 import com.xiaolei.unit.baselibrary.R;
+import com.xiaolei.unit.baselibrary.R2;
 import com.xiaolei.unit.baselibrary.baseMvp.ICoreLoadingView;
 import com.xiaolei.unit.baselibrary.baseMvp.ICorePresenter;
 import com.xiaolei.unit.baselibrary.view.MyPullToRefreshListener;
@@ -24,15 +25,15 @@ import butterknife.BindView;
 public abstract class BaseRecyclerViewActivity<T extends ICorePresenter> extends BaseActivity implements ICoreLoadingView {
 
 
-    @BindView(R.id.rl_back)
+    @BindView(R2.id.rl_back)
     protected RelativeLayout rlBack;
-    @BindView(R.id.tv_title)
+    @BindView(R2.id.tv_title)
     protected TextView tvTitle;
-    @BindView(R.id.rv_base_recyclerView)
+    @BindView(R2.id.rv_base_recyclerView)
     protected RecyclerView rvBaseRecyclerView;
-    @BindView(R.id.swipe)
+    @BindView(R2.id.swipe)
     protected SuperSwipeRefreshLayout swipe;
-    @BindView(R.id.progressLayout)
+    @BindView(R2.id.progressLayout)
     protected ProgressLayout progressLayout;
     protected MyPullToRefreshListener pullToRefreshListener;
 
