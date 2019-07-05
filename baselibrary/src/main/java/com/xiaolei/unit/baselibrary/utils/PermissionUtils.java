@@ -92,7 +92,7 @@ public abstract class PermissionUtils {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
-                        JumpPermissionManagement.ApplicationInfo(activity);
+                        //JumpPermissionManagement.ApplicationInfo(activity);
                     }
                 })
                 .setCancelable(true)
