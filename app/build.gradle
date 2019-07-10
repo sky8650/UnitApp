@@ -13,11 +13,11 @@ android {
         versionName rootProject.ext.android["versionName"]
         applicationId "com.xiaolei.unit.demo"
         //配置阿里ARouter路由
-      /*  javaCompileOptions {
+        javaCompileOptions {
             annotationProcessorOptions {
                 arguments = [AROUTER_MODULE_NAME: project.getName()]
             }
-        }*/
+        }
         ndk {
             abiFilters "armeabi", "armeabi-v7a" //, "x86", "mips"
         }
