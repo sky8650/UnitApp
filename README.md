@@ -16,7 +16,9 @@
           annotationProcessor 'com.jakewharton:butterknife-compiler:9.0.0-rc1'
 ##### 1.1.3： 在对应的activity中将R改成R2
         如果当前的AndroidStudio的版本较高，比如在3.0以上，建议将compileSdkVersion设置为28以上
+        
 ####配置Arouter
+
 ##### 引入对应的仓库
         "router"  : "com.alibaba:arouter-api:1.4.1",
         "router-compiler" : "com.alibaba:arouter-compiler:1.2.2",
