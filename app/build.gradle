@@ -37,4 +37,7 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(':baselibrary')//壳工程只要引入基准包就行
+    if (!rootProject.ext.isMovieApplication){
+        implementation project(':app_movie')
+    }
 }
