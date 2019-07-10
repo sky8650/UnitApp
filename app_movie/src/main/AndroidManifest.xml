@@ -3,7 +3,7 @@
     package="com.xiaolei.unit.app_movie">
 
     <application>
-        <activity android:name=".MovieMainActivity"></activity>
+        <activity android:name=".ui.MovieMainActivity"></activity>
     </application>
 
 </manifest>

@@ -1,8 +1,6 @@
-package com.xiaolei.unit.app_movie;
+package com.xiaolei.unit.app_movie.ui;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-
+import com.xiaolei.unit.app_movie.R;
 import com.xiaolei.unit.baselibrary.base.BaseActivity;
 
 public class MovieMainActivity extends BaseActivity {
