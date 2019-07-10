@@ -3,8 +3,8 @@
 ### 01.项目介绍
 #### 1.1 项目简介
     - 项目整体架构模式采用：组件化+MVP（MVP和MVC混合）+Rx+Retrofit
-       <img src="https://github.com/sky8650/UnitApp/blob/master/images_git/base_project.png"
-   width="375" alt="竖"/>
+       <img src="https://github.com/sky8650/UnitApp/blob/master/images_git/base_project.png" width="375" alt="竖"/>
+   
     
 ### 02.组件化过程
 #### 1.1解决组件项目butterknife不能使用的问题
