@@ -4,6 +4,7 @@
 #### 1.1 项目简介
     - 项目整体架构模式采用：组件化+MVP（MVP和MVC混合）+Rx+Retrofit
        <img src="https://raw.githubusercontent.com/sky8650/UnitApp/master/images_git/base_project.png" width="375" alt="竖"/>
+       <image src="https://github.com/sky8650/TbsForOffice/blob/master/app/img/device-2019-01-25-141307.png" width="260px"/>
    
     
 ### 02.组件化过程
