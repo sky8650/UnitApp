@@ -33,12 +33,10 @@
      1、设置模块开关：
      isMovieApplication = false  //电影模块开关，false:作为Lib组件存在， true:作为application存在
      2、设置application模式下的applicationId
-     ```
        if (rootProject.ext.isMovieApplication){
             //组件模式下设置applicationId
             applicationId "com.xiaolei.unit.app_movie"
         }
-        ```
       3、 加载不同模式的manifest文件
       sourceSets {
         main {
