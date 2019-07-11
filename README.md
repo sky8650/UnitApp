@@ -40,7 +40,6 @@
         }
         ```
       3、 加载不同模式的manifest文件
-      ```
       sourceSets {
         main {
             if (rootProject.ext.isMovieApplication) {
@@ -51,11 +50,9 @@
             jniLibs.srcDirs = ['libs']
         }
     }
-    ```
     4、 壳工程根据不同的模式加载lib（可以避免打包和编译一些不必要的组件，提高开发效率）
-    ```
     implementation project(':baselibrary')//壳工程只要引入基准包就行
     if (!rootProject.ext.isMovieApplication){
         implementation project(':app_movie')
     }
-    ```
+
