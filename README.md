@@ -29,3 +29,33 @@
             }
         }
         需要注意的是，每个model以及app都要在build中加上以上代码
+#### 切换lib与APP工程目录
+     1、设置模块开关：
+     isMovieApplication = false  //电影模块开关，false:作为Lib组件存在， true:作为application存在
+     2、设置application模式下的applicationId
+     ```
+       if (rootProject.ext.isMovieApplication){
+            //组件模式下设置applicationId
+            applicationId "com.xiaolei.unit.app_movie"
+        }
+        ```
+      3、 加载不同模式的manifest文件
+      ```
+      sourceSets {
+        main {
+            if (rootProject.ext.isMovieApplication) {
+                manifest.srcFile 'src/main/module/AndroidManifest.xml'
+            } else {
+                manifest.srcFile 'src/main/AndroidManifest.xml'
+            }
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    ```
+    4、 壳工程根据不同的模式加载lib（可以避免打包和编译一些不必要的组件，提高开发效率）
+    ```
+    implementation project(':baselibrary')//壳工程只要引入基准包就行
+    if (!rootProject.ext.isMovieApplication){
+        implementation project(':app_movie')
+    }
+    ```
