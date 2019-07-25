@@ -9,13 +9,16 @@
 #### 2.1解决组件项目butterknife不能使用的问题
 ##### 2.1.1:需要在项目下的build.gradle中添加对应的插件（版本最好是9.0以上）
          classpath 'com.jakewharton:butterknife-gradle-plugin:9.0.0-rc1'
-##### 2.1.2:在使用到butterknife的model中添加如下
+##### 2.1.2:在使用到butterknife的lib中添加如下
           apply plugin: 'com.jakewharton.butterknife'
          
           api 'com.jakewharton:butterknife:9.0.0-rc1'
           annotationProcessor 'com.jakewharton:butterknife-compiler:9.0.0-rc1'
 ##### 2.1.3： 在对应的activity中将R改成R2
         如果当前的AndroidStudio的版本较高，比如在3.0以上，建议将compileSdkVersion设置为28以上
+##### 2.1.4 注意在每个module中都需要添加，否则可能会出现找不到id的问题
+ annotationProcessor 'com.jakewharton:butterknife-compiler:9.0.0-rc1'
+ apply plugin: 'com.jakewharton.butterknife'
              
 #### 2.2 配置Arouter
 
