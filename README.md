@@ -72,9 +72,9 @@
    #### 2.5AndroidStudio SSL peer shut down incorrectly 问题
    
 ```
- AndroidStudio 编译时出现如下问题 SSL peer shut down incorrectly 或者某些jar包下载不下来，
-    一般是因为墙的原因导致的。这时候我们就需要配置镜像来解决这个问题。（为了提高jar包的下载速度也可以配置）
-    配置的方法就是在根build.gradle中添加镜像仓库，一般我们选择阿里的 http://maven.aliyun.com/nexus/content/groups/public/完整的如下所示
+AndroidStudio 编译时出现如下问题 SSL peer shut down incorrectly 或者某些jar包下载不下来，
+一般是因为墙的原因导致的。这时候我们就需要配置镜像来解决这个问题。（为了提高jar包的下载速度也可以配置）
+配置的方法就是在根build.gradle中添加镜像仓库，一般我们选择阿里的 http://maven.aliyun.com/nexus/content/groups/public/完整的如下所示
 buildscript {
 
     repositories {
